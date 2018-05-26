@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	
+	<center><h1> Biriyani Home</h1>
+		 </center>
+	
+	<style type="text/css">
+	* {
+	  box-sizing: border-box;
+	  margin: 0;
+	  padding: 0;
+	  margin-left:10px;
+	  
+	  }
+	  h1{
+	  	margin-bottom: 6%; 
+	  }
+		#box1,#box2,#box3 {
+		    box-sizing: border-box;
+		    border: 5px solid maroon;
+		    height: 173px;
+		    width: 31%;
+		    margin: 10px;
+		    background-color: yellowgreen;
+		    float: left;
+		    overflow: auto;
+
+
+		}
+		#miniBox{
+	    float: right;
+	    border: 4px solid darkred;
+	    border-top: 0px;
+	    width: 151px;
+	    height: 23px;
+	    text-align: center;
+	    border-right: 0; 
+
+		}
+		#content{
+			font-family: cursive;
+			overflow: visible;
+		}
+		#row{
+			width: 100%;
+			margin-left: 10%;
+		}
+
+		
+ @media (min-width: 1200px){
+ 	#box1,#box2,#box3{
+ 		width: 30%;
+ 	}
+ }
+@media (min-width: 850px) and (max-width: 1199px){
+	#box1{
+		width: 40%;
+	}
+	#box2{
+		width: 40%;
+		right: 0;
+	}
+	#box3{
+		width: 82%;
+	}
+}
+@media(max-width: 849px){
+	#box1,#box2,#box3{
+		width: 80%;
+	}
+}
+body{
+	margin-top: 10%;
+	background-image: url("biriyani.jpg");
+	background-size: cover;
+}
+
+
+</style>
+</head>
+<body >
+	<div class="row">
+	
+	<div id="box1" class="col-lg-4 col-md-6">
+		<div id="miniBox"> Lucknowi Biryani</div>
+		<p id="content">
+			This sumptuous dish is straight from the streets of Lucknow. The rice is cooked separately in garden-fresh spices and marinated chicken is added later. This technique brings out the right amount of flavour in the rice and chicken. The dish is a must try!
+		</p>
+	</div>
+	<div id="box2" class="col-lg-4 col-md-6">
+		<div id="miniBox"> Hyderabadi Biryani</div>
+		<p id="content">
+			One of the most aromatic and savoury dishes, this biryani is is sprinkled with kewda, rose water and saffron. The rice is layered with golden fried onions, chillies, mint leaves and fiery chicken. This dish is best enjoyed with raita.		
+		</p>
+	</div>
+	<div id="box3" class="col-lg-4 col-md-12 ">
+		<div id="miniBox"> Kalyani Biryani</div>
+		<p id="content">
+			Also called the poor man's Hyderabadi biryani, it is made of small chunks of buffalo meat. It doesn't have the expensive ingredients of Hyderabadi biryani but it has the same richness and taste. It originated during the time of the Kalyani Nawabs in Hyderabad but after the nawabs went into decline, the illustrious cooks set up local stalls and started serving the local population.			
+		</p>
+		
+	</div>
+	</div>
+</body>
+</html>
